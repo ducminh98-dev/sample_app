@@ -1,16 +1,16 @@
 
-en:
+vi:
   static_pages:
     sam: "Sample_app"
-    help: "Help"
-    about: "About"
+    help: "Trợ giúp"
+    about: "Khác"
     title:
-      home: "Home"
-      about: "About"
-      help: "HeLp"
-      app: "Ruby on Rails Tutorial Sample App"
+      home: "Trang chủ"
+      about: "Kahsc"
+      help: "Trợ giúp"
+      app: "Ứng dụng Ruby on Rails - hướng dẫn"
     topic:
-      topic_home_html: This is the home page for the
+      topic_home_html: Đây là trang chủ của
                        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
                        sample application
       topic_about_html: The <a href="https://www.railstutorial.org/"><em>Ruby on Rails
