@@ -2,14 +2,19 @@
 vi:
   static_pages:
     home:
-      description: "Chào mừng đến Sample_app"
-      title: "Trang chủ"
+      description: "Welcome to the Sample App"
+      title: "Home"
       content_home: "This is home page for the %{home} sample application"
       alt_logo: "Rails Logo"
       lt_tutorial: "Ruby on Rails Tutorial"
       lt_signup: "Sign up now"
+      home_html:  <h2>
+                  This is the home page for the
+                  <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+                  sample application.
+                  </h2>
     about:
-      description: "Chào mừng đến About - Sample_app"
+      description: "About Page of the Sample App"
       title: "About"
       content_about: "%{tutorial} is a %{book} and %{series} to teach web development with
       .This is the sample application for the tutorial %{tutorial} "
@@ -17,7 +22,7 @@ vi:
       lt_book: "book"
       lt_series: "series"
     help:
-      description: "Chào mừng đến Help - Sample_app"
+      description: "Help Page the Sample App"
       title: "Help"
       content_help: "Get help on the Ruby on Rails Tutorial at the %{help}"
       lt_help: " Ruby on Rails help"
@@ -25,12 +30,20 @@ vi:
       title: "Contact"
       content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the
       %{contact}"
+      content_html: "Contact the Ruby on Rails Tutorial about the sample app at the
+      <a href='https://www.railstutorial.org/contact'>Contact page</a>."
       lt_contact: "Contact Page"
       lt_tutorial: "Hướng dẫn Ruby on Rails"
   layouts:
     application:
+      sample_app: "Sample App"
+      home: "Home"
+      about: "About"
+      help: "Help"
       title_header: "Ruby on Rails Tutorial Sample App"
     header:
       title_home: "Home"
       title_help : "Help"
-      title_login: "Login
+      title_login: "Login"
+    footer:
+      news_html: "<a href='http://news.railstutorial.org/'>News</a>"
