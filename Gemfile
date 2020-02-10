@@ -68,7 +68,6 @@ group :test do
   gem "minitest-reporters", "1.1.14"
   gem "rails-controller-testing", "1.0.2"
 end
-
 # Rubocop
 group :development, :test do
   gem "rubocop", "~> 0.74.0", require: false
