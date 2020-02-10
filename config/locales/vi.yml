@@ -1,27 +1,36 @@
 
 vi:
   static_pages:
-    sam: "Sample_app"
-    help: "Trợ giúp"
-    about: "Khác"
-    title:
-      home: "Trang chủ"
-      about: "Kahsc"
-      help: "Trợ giúp"
-      app: "Ứng dụng Ruby on Rails - hướng dẫn"
-    topic:
-      topic_home_html: Đây là trang chủ của
-                       <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-                       sample application
-      topic_about_html: The <a href="https://www.railstutorial.org/"><em>Ruby on Rails
-                        Tutorial</em></a> is a
-                        <a href="https://www.railstutorial.org/book">book</a> and
-                        <a href="http://screencasts.railstutorial.org/">screencast series</a>
-                        to teach web development with
-                        <a href="http://rubyonrails.org/">Ruby on Rails</a>.
-                        This is the sample application for the tutorial.
-      topic_help_html: Get help on the Ruby on Rails Tutorial at the
-                       <a href="https://www.railstutorial.org/help">Rails Tutorial help section</a>.
-                       To get help on this sample app, see the
-                       <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
-                       book</a>.
+    home:
+      description: "Chào mừng đến Sample_app"
+      title: "Trang chủ"
+      content_home: "This is home page for the %{home} sample application"
+      alt_logo: "Rails Logo"
+      lt_tutorial: "Ruby on Rails Tutorial"
+      lt_signup: "Sign up now"
+    about:
+      description: "Chào mừng đến About - Sample_app"
+      title: "About"
+      content_about: "%{tutorial} is a %{book} and %{series} to teach web development with
+      .This is the sample application for the tutorial %{tutorial} "
+      lt_tutorial: "Ruby on Rails Turorial"
+      lt_book: "book"
+      lt_series: "series"
+    help:
+      description: "Chào mừng đến Help - Sample_app"
+      title: "Help"
+      content_help: "Get help on the Ruby on Rails Tutorial at the %{help}"
+      lt_help: " Ruby on Rails help"
+    contact:
+      title: "Contact"
+      content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the
+      %{contact}"
+      lt_contact: "Contact Page"
+      lt_tutorial: "Hướng dẫn Ruby on Rails"
+  layouts:
+    application:
+      title_header: "Ruby on Rails Tutorial Sample App"
+    header:
+      title_home: "Home"
+      title_help : "Help"
+      title_login: "Login
