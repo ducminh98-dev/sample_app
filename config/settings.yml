@@ -6,3 +6,4 @@ name_maximum: 20
 email_maximum: 255
 minimum_pass: 6
 email_valid: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+avatar.size: 80
