@@ -8,6 +8,11 @@ en:
       alt_logo: "Rails Logo"
       lt_tutorial: "Ruby on Rails Tutorial"
       lt_signup: "Sign up now"
+      home_html:  <h2>
+                  This is the home page for the
+                  <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+                  sample application.
+                  </h2>
     about:
       description: "About Page of the Sample App"
       title: "About"
@@ -25,12 +30,26 @@ en:
       title: "Contact"
       content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the
       %{contact}"
+      content_html: "Contact the Ruby on Rails Tutorial about the sample app at the
+                     <a href='https://www.railstutorial.org/contact'>Contact page</a>."
       lt_contact: "Contact Page"
       lt_tutorial: "Hướng dẫn Ruby on Rails"
   layouts:
     application:
+      sample_app: "Sample App"
+      home: "Home"
+      about: "About"
+      help: "Help"
       title_header: "Ruby on Rails Tutorial Sample App"
     header:
       title_home: "Home"
       title_help : "Help"
       title_login: "Login"
+    footer:
+      news_html: "<a href='http://news.railstutorial.org/'>News</a>"
+      content_footer_html: "The <a href='https://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+    by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+      lt_tutorial: "Ruby on Rails Turorial"
+  user:
+    new:
+      singup: "Sing Up"
