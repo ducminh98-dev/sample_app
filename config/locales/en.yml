@@ -50,6 +50,13 @@ en:
       content_footer_html: "The <a href='https://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
     by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
       lt_tutorial: "Ruby on Rails Turorial"
-  user:
+  users:
     new:
       singup: "Sing Up"
+      create: "Create my account"
+    show:
+      not_found: "Dont have any Users" 
+    create:
+      success: "Well come the the Sample App"
+  shared:
+    error_mess: "The form contains %{error} error"
