@@ -1,7 +1,7 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-       <%= t(".error_mess",error: @user.error.size).html_safe%>.
+       <%= t(".error_mess",error: @user.errors.size).html_safe%>.
     </div>
     <ul>
       <% @user.errors.full_messages.each do |msg| %>

@@ -45,6 +45,10 @@ en:
       title_home: "Home"
       title_help : "Help"
       title_login: "Login"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       news_html: "<a href='http://news.railstutorial.org/'>News</a>"
       content_footer_html: "The <a href='https://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
@@ -60,3 +64,9 @@ en:
       success: "Well come the the Sample App"
   shared:
     error_mess: "The form contains %{error} error"
+  sessions:
+    new:
+      login: "Log in"
+      singup_now: "Sign up Now ?"
+    create:
+      fail: "Invalid email/password combination"
