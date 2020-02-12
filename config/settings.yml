@@ -2,6 +2,7 @@ link_tutorial: https://www.railstutorial.org
 link_help: https://www.railstutorial.org/help
 link_book: https://www.railstutorial.org/book
 link_screen: http://screencasts.railstutorial.org/
+link_drop: "#"
 name_maximum: 20
 email_maximum: 255
 minimum_pass: 6
