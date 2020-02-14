@@ -61,7 +61,7 @@ en:
       create: "Create my account"
       confirmation: "Confirmation"
     show:
-      not_found: "Dont have any Users" 
+      not_found: "Dont have any Users"
     create:
       success: "Well come the the Sample App"
       fail: "Cant create new User"
@@ -72,5 +72,6 @@ en:
       login: "Log in"
       singup_now: "Sign up Now ?"
       new_user?: "New user?"
+      rememer_me: "Remember me on this computer"
     create:
       fail: "Invalid email/password combination"
