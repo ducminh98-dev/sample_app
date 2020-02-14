@@ -64,7 +64,29 @@ en:
       not_found: "Dont have any Users"
     create:
       success: "Well come the the Sample App"
-      fail: "Cant create new User"
+      update_pro: "Update your profile"
+      fails: "Can't create user"
+      correct_user: "User is not correct"
+    edit:
+      edit_user: "Edit user"
+      save_changes: "Save changes"
+      pls_lg: "Please log in"
+      edit_change: "Update"
+      correct_user: "User is not correct"
+    update:
+      up_success: "Profile were be updated"
+      up_fail: "Can't update profile"
+    index:
+      pleas_lg: "Please Log in"
+      all_users: "All users"
+    destroy:
+      cof: "You sure?"
+      user_deleted: "User delected"
+      not_adminn: "You are'nt admin"
+      cant_destroy: "Cant delete"
+      conf_destroy: "Your sure"
+      not_find: "Cant find user"
+      success_del: "User was be delete"
   shared:
     error_mess: "The form contains %{error} error"
   sessions:
@@ -75,3 +97,8 @@ en:
       rememer_me: "Remember me on this computer"
     create:
       fail: "Invalid email/password combination"
+  user_mailer:
+    account_activation:
+      sign: "Sing up Account"
+    password_reset:
+      reset_pass: "password reset"
