@@ -45,11 +45,45 @@ en:
       title_home: "Home"
       title_help : "Help"
       title_login: "Login"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       news_html: "<a href='http://news.railstutorial.org/'>News</a>"
       content_footer_html: "The <a href='https://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
     by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
       lt_tutorial: "Ruby on Rails Turorial"
-  user:
+  users:
     new:
       singup: "Sing Up"
+      create: "Create my account"
+    show:
+      not_found: "Dont have any Users"
+    create:
+      success: "Well come the the Sample App"
+      update_pro: "Update your profile"
+      fails: "Can't create user"
+    edit:
+      edit_user: "Edit user"
+      save_changes: "Save changes"
+      pls_lg: "Please log in"
+      edit_change: "Update"
+    update:
+      up_success: "Profile were be updated"
+      up_fail: "Can't update profile"
+    index:
+      pleas_lg: "Please Log in"
+      all_users: "All users"
+    delete:
+      cof: "You sure?"
+      del_succes: "User delected"
+  shared:
+    error_mess: "The form contains %{error} error"
+  sessions:
+    new:
+      login: "Log in"
+      singup_now: "Sign up Now ?"
+      remember_me: "Remember me on this computer"
+    create:
+      fail: "Invalid email/password combination"
