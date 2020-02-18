@@ -69,17 +69,20 @@ class UsersController < ApplicationController
 
   def correct_user
     return if current_user?(@user)
+
     redirect_to root_url
   end
 
   def admin_user
     return if current_user.admin?
+
     flash[:alert] = t ".not_adminn"
   end
 
   def find_user
     @user = User.find_by id: params[:id]
     return if @user
+
     flash[:alert] = t "user.destroy.not_find"
     redirect_to users_path
   end

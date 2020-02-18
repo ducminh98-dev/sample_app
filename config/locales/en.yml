@@ -88,6 +88,9 @@ en:
       conf_destroy: "Your sure"
       not_find: "Cant find user"
       success_del: "User was be delete"
+    delete:
+      cof: "You sure?"
+      del_succes: "User delected"
   shared:
     error_mess: "The form contains %{error} error"
   sessions:
@@ -96,6 +99,7 @@ en:
       singup_now: "Sign up Now ?"
       new_user?: "New user?"
       rememer_me: "Remember me on this computer"
+      forgot_pass: "(Forgot password)"
     create:
       fail: "Invalid email/password combination"
   user_mailer:
@@ -114,4 +118,13 @@ en:
         success_reset_pass: "Pass word have been reset"
       unvalid: "Account dont activated or time out"
       check: "Check reset password again"
+  user_mailer:
     sub_mail: "Account activation"
+  password_resets:
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      conf: "Confirmation"
+    update:
+      success_reset_pass: "Password has been reset."
+      check: "Password reset has expired"
