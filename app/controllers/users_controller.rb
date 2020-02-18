@@ -8,6 +8,8 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
+  def edit; end
+
   def show
     return if @user
 
@@ -19,14 +21,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def edit; end
-
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".pls_check_email"
+      redirect_to root_url
     else
       flash[:alert] = t ".fails"
       render :new
@@ -69,21 +69,17 @@ class UsersController < ApplicationController
 
   def correct_user
     return if current_user?(@user)
-
-    flash[:alert] = t ".correct_user"
     redirect_to root_url
   end
 
   def admin_user
     return if current_user.admin?
-
     flash[:alert] = t ".not_adminn"
   end
 
   def find_user
     @user = User.find_by id: params[:id]
     return if @user
-
     flash[:alert] = t "user.destroy.not_find"
     redirect_to users_path
   end

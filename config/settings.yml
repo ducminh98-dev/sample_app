@@ -9,3 +9,4 @@ minimum_pass: 6
 email_valid: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
 avatar_size: 80
 max_size_ava: 80
+email: "vuducminhmv1998@gmail.com"

@@ -67,6 +67,7 @@ en:
       update_pro: "Update your profile"
       fails: "Can't create user"
       correct_user: "User is not correct"
+      pls_check_email: "Please check your email to activate your account."
     edit:
       edit_user: "Edit user"
       save_changes: "Save changes"
@@ -100,5 +101,17 @@ en:
   user_mailer:
     account_activation:
       sign: "Sing up Account"
+      active: "Activate"
+      activate_success: "Account activated!"
+      inva_link: "Invalid activation link"
     password_reset:
       reset_pass: "password reset"
+      mes_check_mail: "Account not activated. Check your email for the activation link."
+      create:
+        send_mess: "Email sent with password reset instructions"
+        danger_mail: "Email address not found"
+      update:
+        success_reset_pass: "Pass word have been reset"
+      unvalid: "Account dont activated or time out"
+      check: "Check reset password again"
+    sub_mail: "Account activation"
