@@ -1,5 +1,7 @@
 
 en:
+  application:
+
   static_pages:
     home:
       description: "Welcome to the Sample App"
@@ -88,14 +90,23 @@ en:
       conf_destroy: "Your sure"
       not_find: "Cant find user"
       success_del: "User was be delete"
+    delete:
+      cof: "You sure?"
+      del_succes: "User delected"
+    _follow:
+      follow: "Follow"
+      unfollow: "Unfollow"
   shared:
     error_mess: "The form contains %{error} error"
+    _user_infor:
+      view_profile: "View my profile"
   sessions:
     new:
       login: "Log in"
       singup_now: "Sign up Now ?"
       new_user?: "New user?"
       rememer_me: "Remember me on this computer"
+      forgot_pass: "(Forgot password)"
     create:
       fail: "Invalid email/password combination"
   user_mailer:
@@ -114,4 +125,19 @@ en:
         success_reset_pass: "Pass word have been reset"
       unvalid: "Account dont activated or time out"
       check: "Check reset password again"
+  user_mailer:
     sub_mail: "Account activation"
+  password_resets:
+    new:
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      conf: "Confirmation"
+    update:
+      success_reset_pass: "Password has been reset."
+      check: "Password reset has expired"
+  microposts:
+    min_size_pic: "Show less than 5MB"
+    delete: "Delete"
+    infor_size_pic: " The size of picture not over 5MB"

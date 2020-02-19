@@ -11,8 +11,9 @@ class UsersController < ApplicationController
   def edit; end
 
   def show
+    @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
     return if @user
-
     flash[:alert] = t ".not_found"
     redirect_to root_path
   end
@@ -52,6 +53,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def following
+    @title = "Following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user  = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
   private
 
   def user_params
@@ -68,18 +83,20 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    return if current_user?(@user)
-    redirect_to root_url
+    @user = User.find(params[:id])
+    redirect_to(root_url) unless current_user?(@user)
   end
 
   def admin_user
     return if current_user.admin?
+
     flash[:alert] = t ".not_adminn"
   end
 
   def find_user
     @user = User.find_by id: params[:id]
     return if @user
+
     flash[:alert] = t "user.destroy.not_find"
     redirect_to users_path
   end
