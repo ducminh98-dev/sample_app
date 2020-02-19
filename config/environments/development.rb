@@ -42,6 +42,8 @@ Rails.application.configure do
   config.assets.quiet = true
 
 
+  config.middleware.use I18n::JS::Middleware
+  
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 

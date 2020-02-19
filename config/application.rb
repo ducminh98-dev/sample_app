@@ -9,3 +9,4 @@ module SampleApp
   # config.i18n.default_locate = :en
   end
 end
+
