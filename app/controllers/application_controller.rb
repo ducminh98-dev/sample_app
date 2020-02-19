@@ -13,4 +13,14 @@ class ApplicationController < ActionController::Base
   end
 
   def contact; end
+
+  private
+
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = t"users.edit.pls_lg"
+      redirect_to login_url
+    end
+  end
 end

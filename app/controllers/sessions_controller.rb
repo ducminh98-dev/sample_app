@@ -12,6 +12,9 @@ class SessionsController < ApplicationController
         flash[:warning] = t ".mes_check_mail"
         redirect_to root_url
       end
+    else
+      flash.now[:danger] = t ".fail"
+      render :new
     end
   end
 
