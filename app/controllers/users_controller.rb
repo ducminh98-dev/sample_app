@@ -11,8 +11,9 @@ class UsersController < ApplicationController
   def edit; end
 
   def show
+    @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
     return if @user
-
     flash[:alert] = t ".not_found"
     redirect_to root_path
   end
@@ -68,12 +69,13 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    return if current_user?(@user)
-    redirect_to root_url
+    @user = User.find(params[:id])
+    redirect_to(root_url) unless current_user?(@user)
   end
 
   def admin_user
     return if current_user.admin?
+
     flash[:alert] = t ".not_adminn"
   end
 
